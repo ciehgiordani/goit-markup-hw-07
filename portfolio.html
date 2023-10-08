@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Effective solutions for business, Digital Marketing" />
+  <title>Studio</title>
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
+  <link rel="stylesheet" href="./css/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
+    rel="stylesheet" />
+  <link rel="icon" href="./images/webstudio-logo.png" />
+</head>
+
+<body>
+
+    <!-- header_logo, Menu_nav, header_address for index and portfolio -->
+<header class="header">
+  <div class="container header-container">
+    <nav class="header-navigation">
+      <a href="./index.html" class="header-logo link"><span class="logo-blue">WEB</span>STUDIO</a>
+      <ul class="header-menu-list list">
+        <li class="header-menu-item">
+          <a href="./index.html" class="header-menu-link link ">Studio</a>
+        </li>
+        <li class="header-menu-item">
+          <a href="./portfolio.html" class="header-menu-link link menu-active">Portfolio</a>
+        </li>
+        <li class="header-menu-item">
+          <a href="#" class="header-menu-link link">Contacts</a>
+        </li>
+      </ul>
+    </nav>
+    <address class="header-address">
+      <ul class="header-address-list list">
+        <li class="header-address-item">
+          <a href="mailto:info@devstudio.com" class="header-address-link link" target="_blank"
+            rel="noopener noreferrer">info@devstudio.com</a>
+        </li>
+        <li class="header-address-item">
+          <a href="tel:+110001111111" class="header-address-link link" target="_blank" rel="noopener noreferrer">+11
+            (000) 111-11-11</a>
+        </li>
+      </ul>
+    </address>
+    <!-- Menu hamburger mobile display -->
+    <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+      <svg class="menu-icon" width="32" height="32">
+        <use href="./svg/icons.svg#hamburger-open"></use>
+      </svg>
+    </button>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle hamburger-close-button js-close-menu">
+        <svg class="menu-icon" width="32" height="32">
+          <use href="./svg/icons.svg#hamburger-close"></use>
+        </svg>
+      </button>
+      <ul class="hamburger-menu-list list">
+        <li class="hamburger-menu-item">
+          <a href="./index.html" class="hamburger-menu-link link menu-active">Studio</a>
+        </li>
+        <li class="hamburger-menu-item">
+          <a href="./portfolio.html" class="hamburger-menu-link link">Portfolio</a>
+        </li>
+        <li class="hamburger-menu-item">
+          <a href="#" class="hamburger-menu-link link">Contacts</a>
+        </li>
+      </ul>
+      <div class="hamburger-wrapper">
+        <address class="hamburger-address">
+          <ul class="hamburger-address-list list">
+            <li class="hamburger-address-item">
+              <a href="tel:+110001111111" class="hamburger-address-link highlight link" target="_blank"
+                rel="noopener noreferrer">+11 (000) 111-11-11</a>
+            </li>
+            <li class="hamburger-address-item">
+              <a href="mailto:info@devstudio.com" class="hamburger-address-link link" target="_blank"
+                rel="noopener noreferrer">info@devstudio.com</a>
+            </li>
+          </ul>
+        </address>
+        <ul class="hamburger-social-list list">
+          <li class="hamburger-social-item">
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"
+              class="hamburger-social-link link"><svg class="hamburger-social-icon" width="16" height="16">
+                <use href="./svg/icons.svg#instagram"></use>
+              </svg></a>
+          </li>
+          <li class="hamburger-social-item">
+            <a href="https://www.twitter.com/" target="_blank" rel="noopener noreferrer"
+              class="hamburger-social-link link"><svg class="hamburger-social-icon" width="16" height="16">
+                <use href="./svg/icons.svg#twitter"></use>
+              </svg></a>
+          </li>
+          <li class="hamburger-social-item">
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"
+              class="hamburger-social-link link"><svg class="hamburger-social-icon" width="16" height="16">
+                <use href="./svg/icons.svg#facebook"></use>
+              </svg></a>
+          </li>
+          <li class="hamburger-social-item">
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer"
+              class="hamburger-social-link link"><svg class="hamburger-social-icon" width="16" height="16">
+                <use href="./svg/icons.svg#linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>
+
+    <main>
+      <!-- portfolio feature section -->
+      <section class="portfolio-feature">
+        <div class="container">
+          <div class="filters__div">
+            <ul class="filters__list list">
+              <li><button class="filters__item-button" type="button">All</button></li>
+              <li><button class="filters__item-button" type="button">Website</button></li>
+              <li><button class="filters__item-button" type="button">App</button></li>
+              <li><button class="filters__item-button" type="button">Design</button></li>
+              <li><button class="filters__item-button" type="button">Marketing</button></li>
+            </ul>
+          </div>
+            <!-- project cards section -->
+            <ul class="project-cards__list list">
+              <li class="project-cards__item">
+                  <a href="#"><img class="project-cards__image" src="./images/bankingapp.jpg"  alt="different kinds of bank applications"></a>
+                  <figcaption class="project-cards__figcaption">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App ·
+                  Cloud Storage App</figcaption>
+                <div class="project-cards-desc__div">
+                  <h3 class="project-cards__heading">Banking App Interface Concept</h3>
+                  <p class="project-cards__par">App</p>
+                </div>
+              </li>
+              <li class="project-cards__item">
+                  <a href="#"><img class="project-cards__image" src="./images/cashless.jpg"  alt="mobile phone scanning a QR code"></a>
+                  <figcaption class="project-cards__figcaption">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit
+                    Ecommerce App ·
+                    Cloud Storage App</figcaption>
+                  <div class="project-cards-desc__div">
+                    <h3 class="project-cards__heading">Cashless Payment</h3>
+                    <p class="project-cards__par">Marketing</p>
+                  </div>
+              </li>
+              <li class="project-cards__item">
+                  <a href="#"><img class="project-cards__image" src="./images/meditation.jpg"  alt="laptop and a phone with same display"></a>
+                  <figcaption class="project-cards__figcaption">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit
+                    Ecommerce App ·
+                    Cloud Storage App</figcaption>
+                  <div class="project-cards-desc__div">
+                    <h3 class="project-cards__heading">Meditation app</h3>
+                    <p class="project-cards__par">App</p>
+                  </div>
+              </li>
+              <li class="project-cards__item">
+                  <a href="#"><img class="project-cards__image" src="./images/taxi.jpg"  alt="person driving a car with phone mounted on the dashboard"></a>
+                  <figcaption class="project-cards__figcaption">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit
+                    Ecommerce App ·
+                    Cloud Storage App</figcaption>
+                  <div class="project-cards-desc__div">
+                    <h3 class="project-cards__heading">Taxi Service</h3>
+                    <p class="project-cards__par">Marketing</p>
+                  </div>
+              </li>
+              <li class="project-cards__item">
+                  <a href="#"><img class="project-cards__image" src="./images/screen.jpg"  alt="phone with multiple background display"></a>
+                  <figcaption class="project-cards__figcaption">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit
+                    Ecommerce App ·
+                    Cloud Storage App</figcaption>
+                  <div class="project-cards-desc__div">
+                    <h3 class="project-cards__heading">Screen Illustrations Design</h3>
+                    <p class="project-cards__par">Design</p>
+                  </div>
+              </li>
+              <li class="project-cards__item">
+                  <a href="#"><img class="project-cards__image" src="./images/online.jpg"  alt="woman looking at her phone smiling while video calling"></a>
+                  <figcaption class="project-cards__figcaption">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit
+                    Ecommerce App ·
+                    Cloud Storage App</figcaption>
+                  <div class="project-cards-desc__div">
+                    <h3 class="project-cards__heading">Online Courses</h3>
+                    <p class="project-cards__par">Marketing</p>
+                  </div>
+              </li>
+              <li class="project-cards__item">
+                  <a href="#"><img class="project-cards__image" src="./images/instagramstories.jpg"  alt="sample instagram stories by a social influencer"></a>
+                  <figcaption class="project-cards__figcaption">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit
+                    Ecommerce App ·
+                    Cloud Storage App</figcaption>
+                  <div class="project-cards-desc__div">
+                    <h3 class="project-cards__heading">Instagram Stories Concept</h3>
+                    <p class="project-cards__par">Design</p>
+                  </div>
+              </li>
+              <li class="project-cards__item">
+                  <a href="#"><img class="project-cards__image" src="./images/organic.jpg"  alt="lady holding a bag of vegetbale groceries"></a>
+                  <figcaption class="project-cards__figcaption">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit
+                    Ecommerce App ·
+                    Cloud Storage App</figcaption>
+                  <div class="project-cards-desc__div">
+                    <h3 class="project-cards__heading">Organic Food</h3>
+                    <p class="project-cards__par">Web Site</p>
+                  </div>
+              <li class="project-cards__item">
+                  <a href="#"><img class="project-cards__image" src="./images/fresh.jpg" alt="caffuccino in a cup with a leaf design"></a>
+                  <figcaption class="project-cards__figcaption">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit
+                    Ecommerce App ·
+                    Cloud Storage App</figcaption>
+                  <div class="project-cards-desc__div">
+                    <h3 class="project-cards__heading">Fresh Coffee</h3>
+                    <p class="project-cards__par">Web Site</p>
+                  </div>
+              </li>
+            </ul>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer section, index and portfolio -->
+    <footer class="footer">
+      <div class="footer-container container">
+        <div class="footer-text-container">
+          <a href="./index.html" class="footer-logo link"><span class="logo-blue">WEB</span>STUDIO</a>
+          <p class="footer-text">
+            Increase the flow of customers and
+            <br />
+            sales for your business with digital
+            <br />
+            marketing & growth solutions.
+          </p>
+        </div>
+        <div class="footer-social-container">
+          <p class="footer-social-text">Social media</p>
+          <ul class="footer-social-list list">
+            <li class="footer-social-item">
+              <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"
+                class="footer-social-link link"><svg class="footer-social-icon" width="24" height="24">
+                  <use href="./svg/icons.svg#instagram"></use>
+                </svg></a>
+            </li>
+            <li class="footer-social-item">
+              <a href="https://www.twitter.com/" target="_blank" rel="noopener noreferrer"
+                class="footer-social-link link"><svg class="footer-social-icon" width="24" height="24">
+                  <use href="./svg/icons.svg#twitter"></use>
+                </svg></a>
+            </li>
+            <li class="footer-social-item">
+              <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"
+                class="footer-social-link link"><svg class="footer-social-icon" width="24" height="24">
+                  <use href="./svg/icons.svg#facebook"></use>
+                </svg></a>
+            </li>
+            <li class="footer-social-item">
+              <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer"
+                class="footer-social-link link"><svg class="footer-social-icon" width="24" height="24">
+                  <use href="./svg/icons.svg#linkedin"></use>
+                </svg></a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-form-container">
+          <form class="footer-subscription-form" name="subscribe-form" autocomplete="on">
+            <label class="footer-subscription-label">
+              <span class="footer-subscription-text">Subscribe</span>
+              <input class="footer-subscription-input" type="email" name="subscription-email" placeholder="E-mail" />
+            </label>
+            <button class="footer-subscription-button" type="submit">
+              Subscribe
+              <svg class="footer-subscription-icon" width="24" height="24">
+                <use href="./svg/icons.svg#subscription"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
+ </body>
+
+ </html>
+
+
